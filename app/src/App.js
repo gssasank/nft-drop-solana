@@ -45,7 +45,7 @@ const App = () => {
       <div className="container">
         <div className="header-container">
           <p className="header">🔮 Sharingan NFT Collection</p>
-          <p className="sub-text">NFT drop machine with fair mint</p>
+          <p className="sub-text">Tobi's exclusive Sharingan NFT Collection with Fair Mint!</p>
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
