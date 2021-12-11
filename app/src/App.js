@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 
+// Important info
+// wallet public key: 8VD73FhZQxyBYqY4WG2zEePZkFn29fAqUrfCrf5mu9Bv
+// create_candy_machine finished. candy machine pubkey: EnLUwDPw1J5prUhjiMNF2cjAswWV53kGCLTJmQdJGWz3
+
 // Constants
 const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
