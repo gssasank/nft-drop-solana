@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import twitterLogo from './assets/twitter-logo.svg';
+import CandyMachine from './CandyMachine';
 
 // Important info
 // wallet public key: 8VD73FhZQxyBYqY4WG2zEePZkFn29fAqUrfCrf5mu9Bv
@@ -75,9 +76,10 @@ const App = () => {
         <div className="header-container">
           <p className="header">🔮 Sharingan NFT Collection</p>
           <p className="sub-text">Tobi's exclusive Sharingan NFT Collection with Fair Mint!</p>
-          {/* Add the condition to show this only if we don't have a wallet address */}
           {!walletAddress && renderNotConnectedContainer()}
         </div>
+        {/* Check for walletAddress and then pass in walletAddress */}
+      {walletAddress && <CandyMachine walletAddress={window.solana} />}
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
